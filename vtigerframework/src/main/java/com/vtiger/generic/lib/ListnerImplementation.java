@@ -12,22 +12,12 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class ListnerImplementation extends BaseClass implements ITestListener {
-
-	public void onFinish(ITestContext arg0) {
-		// TODO Auto-generated method stub
-		
+	public void onFinish(ITestContext arg0) {	
 	}
-
-	public void onStart(ITestContext arg0) {
-		// TODO Auto-generated method stub
-		
+	public void onStart(ITestContext arg0) {	
 	}
-
-	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
-		// TODO Auto-generated method stub
-		
+	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {	
 	}
-
 	public void onTestFailure(ITestResult name) {
 		String testName = name.getName();
 		EventFiringWebDriver efw = new EventFiringWebDriver(driver);
@@ -41,20 +31,10 @@ public class ListnerImplementation extends BaseClass implements ITestListener {
 			e.printStackTrace();
 		}
 	}
-
-	public void onTestSkipped(ITestResult arg0) {
-		// TODO Auto-generated method stub
-		
+	public void onTestSkipped(ITestResult arg0) {	
 	}
-
-	public void onTestStart(ITestResult arg0) {
-		// TODO Auto-generated method stub
-		
+	public void onTestStart(ITestResult arg0) {	
 	}
-
-	public void onTestSuccess(ITestResult arg0) {
-		// TODO Auto-generated method stub
-		
+	public void onTestSuccess(ITestResult arg0) {			
 	}
-
 }
